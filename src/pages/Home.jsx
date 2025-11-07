@@ -1,8 +1,8 @@
 import carrouselImg1 from '../assets/carrousel-img-1.png'
 import carrouselImg2 from '../assets/carrousel-im-2.png'
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import ProductCard from '../components/ProductCard'
+import productImg1 from '../assets/product-1.png'
 
 function Home() {
     return (
@@ -44,10 +44,27 @@ function Home() {
             {/* Productos destacados */}
             <div className="container my-5">
                 <h3 className="text-center mb-4 fw-bold">Productos destacados</h3>
-                <div className="row g-3">
-                    <div>
-
-                    </div>
+                <div className="d-flex flex-wrap justify-content-center gap-4">
+                    <ProductCard
+                        img={productImg1}
+                        title="Pan Integral"
+                        description="Delicioso pan integral hecho con ingredientes naturales."
+                    />
+                    <ProductCard
+                        img={productImg1}
+                        title="Pan Integral"
+                        description="Delicioso pan integral hecho con ingredientes naturales."
+                    />
+                    <ProductCard
+                        img={productImg1}
+                        title="Pan Integral"
+                        description="Delicioso pan integral hecho con ingredientes naturales."
+                    />
+                    <ProductCard
+                        img={productImg1}
+                        title="Pan Integral"
+                        description="Delicioso pan integral hecho con ingredientes naturales."
+                    />
                 </div>
 
             </div>
