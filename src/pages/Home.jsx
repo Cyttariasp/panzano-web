@@ -3,6 +3,8 @@ import carrouselImg2 from '../assets/carrousel-im-2.png'
 import React from 'react'
 import ProductCard from '../components/ProductCard'
 import productImg1 from '../assets/product-1.png'
+import { BookA } from 'lucide-react';
+
 
 function Home() {
     return (
@@ -60,12 +62,22 @@ function Home() {
                         title="Pan Integral"
                         description="Delicioso pan integral hecho con ingredientes naturales."
                     />
-                    <ProductCard
-                        img={productImg1}
-                        title="Pan Integral"
-                        description="Delicioso pan integral hecho con ingredientes naturales."
-                    />
                 </div>
+                <button className="btn btn-success d-block mx-auto mt-4"><BookA /> Catálogo completo</button>
+                <div className="bg-light py-5">
+                    <div className="container text-center">
+                        <h4 className="fw-bold mb-4">Lo que dicen nuestros clientes</h4>
+                        <div className="row justify-content-center">
+                            <div className="col-md-4">
+                                <blockquote className="blockquote">
+                                    <p>"¡El pan más rico que he probado! Recién horneado y siempre fresco."</p>
+                                    <footer className="blockquote-footer">Carla M.</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 
             </div>
         </div>
