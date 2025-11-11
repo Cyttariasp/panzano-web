@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { BrowserRouter, Router, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Home from './pages/Home.jsx'
+import Products from './pages/Products.jsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
       <Footer />
     </BrowserRouter>

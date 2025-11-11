@@ -50,7 +50,8 @@ function Home() {
                     <ProductCard
                         img={productImg1}
                         title="Pan Integral"
-                        description="Delicioso pan integral hecho con ingredientes naturales."
+                        price="5.000"
+                        description="Delicioso pan integral hecho con harina integral, semillas de linaza, chia y frutos secos."
                     />
                     <ProductCard
                         img={productImg1}
